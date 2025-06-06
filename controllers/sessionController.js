@@ -1,6 +1,6 @@
 const Session = require('../models/Session');
 
-// Crear sesión (agendamiento)
+// Crear sesión 
 const createSession = async (req, res) => {
   try {
     const { tutor, student, subject, date, time } = req.body;
@@ -23,7 +23,7 @@ const getTutorSessions = async (req, res) => {
   }
 };
 
-// Cambiar estado de una sesión (ej: confirmar/cancelar)
+// Cambiar estado de una sesión 
 const updateSessionStatus = async (req, res) => {
   const { sessionId } = req.params;
   const { status } = req.body;

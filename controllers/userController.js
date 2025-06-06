@@ -64,7 +64,7 @@ const loginUser = async (req, res) => {
 };
 
 
-// Listar tutores (filtrable por materia)
+// Listar tutores 
 const listTutors = async (req, res) => {
   const { subject } = req.query;
 
@@ -83,7 +83,7 @@ const listTutors = async (req, res) => {
   }
 };
 
-// Obtener usuario por email
+// Obtener usuarios por email
 const getUserByEmail = async (req, res) => {
   try {
     const { email } = req.params;
